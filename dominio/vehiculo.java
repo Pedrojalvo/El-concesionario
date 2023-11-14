@@ -16,23 +16,8 @@ class VehiculoTurismo extends Vehiculo {
         super(precioBase);
     }
 
-    @Override
     public double calcularPrecioFinal() {
         return precioBase;
-    }
-}
-
-class Furgoneta extends Vehiculo {
-    private double capacidadM3;
-
-    public Furgoneta(double precioBase, double capacidadM3) {
-        super(precioBase);
-        this.capacidadM3 = capacidadM3;
-    }
-
-    @Override
-    public double calcularPrecioFinal() {
-        return precioBase * Math.pow(capacidadM3, 1.0 / 3) / 2;
     }
 }
 
